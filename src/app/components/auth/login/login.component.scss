@@ -1,1 +1,27 @@
 @import '../../../../styles.scss';
+
+section {
+  &.login-screen {
+    .logo {
+      display: block;
+      margin: auto;
+      img {
+        width: 70px;
+        height: 70px;
+        // object-fit: cover;
+        // object-position: center;
+      }
+    }
+    .account-text {
+      span {
+        color: $black;
+        font-size: 15px;
+      }
+      a {
+        font-weight: 600;
+        font-size: 16px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
