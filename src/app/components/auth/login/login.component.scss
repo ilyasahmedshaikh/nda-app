@@ -12,6 +12,17 @@ section {
         // object-position: center;
       }
     }
+    .inputs {
+      .icon {
+        display: block;
+        margin: auto;
+        text-align: center;
+        i {
+          color: $silver;
+          font-size: 25px;
+        }
+      }
+    }
     .account-text {
       span {
         color: $black;
