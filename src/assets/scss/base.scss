@@ -36,6 +36,19 @@ section {
   }
 }
 
+.form-group {
+  &.box-input {
+    input {
+      font-size: 35px !important;
+      font-weight: 500 !important;
+      border: 1px solid #e7e7e7 !important;
+      padding: 45px 27px !important;
+      color: #000000 !important;
+      background-color: #f9f9f9 !important;
+    }
+  }
+}
+
 .form-control {
     font-size: 15px;
     border: 1px solid #e7e7e7 !important;
