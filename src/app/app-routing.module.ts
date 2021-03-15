@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'auth',
     loadChildren: () => import('./components/auth/auth.module').then(m => m.AuthModule)
   },
+  {
+    path: 'favorites',
+    loadChildren: () => import('./components/favorites/favorites.module').then(m => m.FavoritesModule)
+  },
 ];
 
 @NgModule({
