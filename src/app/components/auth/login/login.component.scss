@@ -12,18 +12,41 @@ section {
         // object-position: center;
       }
     }
-    .inputs {
-      .icon {
-        display: block;
-        margin: auto;
-        text-align: center;
-        i {
-          color: $silver;
-          font-size: 25px;
+    form {
+      &.login-inputs {
+        .cutom-input {
+          position: relative;
+          i {
+            position: absolute;
+            padding-top: 9px;
+            color: #8d8b8b;
+            font-size: 20px;
+          }
+          input {
+            padding-left: 35px;
+          }
+          .eye-icon {
+            i {
+              position: absolute;
+              right: 0px;
+              bottom: 8px;
+              color: #8d8b8b;
+              font-size: 18px;
+            }
+          }
+        }
+        .forgot-password {
+          a {
+            color: $light-black;
+            font-size: 16px;
+          }
+        }
+        .login-btn {
+          margin-top: 13%;
         }
       }
     }
-    .account-text {
+    .account-new {
       span {
         color: $black;
         font-size: 15px;
@@ -32,6 +55,7 @@ section {
         font-weight: 600;
         font-size: 16px;
         padding-left: 5px;
+        color: $light-black;
       }
     }
   }

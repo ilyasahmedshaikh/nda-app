@@ -10,9 +10,9 @@ h1, h2, h3, h4, h5, h6, p ,ul {
     margin: 0;
 }
 
-// a {
-//     text-decoration: none;
-// }
+a {
+    text-decoration: none;
+}
 
 section {
     padding: 20px 0 0 0;
@@ -24,6 +24,16 @@ section {
     font-size: 15px;
     width: 100%;
     border-radius: 5px;
+}
+
+.form-group {
+  &.cutom-input {
+    input {
+      border: 0px !important;
+      border-bottom: 1px solid #e7e7e7 !important;
+      border-radius: 0px !important;
+    }
+  }
 }
 
 .form-control {

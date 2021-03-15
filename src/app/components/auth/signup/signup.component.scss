@@ -1,0 +1,35 @@
+@import '../../../../styles.scss';
+
+section {
+  &.signup-screen {
+    .logo {
+      display: block;
+      margin: auto;
+      img {
+        width: 70px;
+        height: 70px;
+        // object-fit: cover;
+        // object-position: center;
+      }
+    }
+    form {
+      &.signup-inputs {
+        .signup-btn {
+          margin-top: 13%;
+        }
+      }
+    }
+    .account-new {
+      span {
+        color: $black;
+        font-size: 15px;
+      }
+      a {
+        font-weight: 600;
+        font-size: 16px;
+        padding-left: 5px;
+        color: $light-black;
+      }
+    }
+  }
+}
