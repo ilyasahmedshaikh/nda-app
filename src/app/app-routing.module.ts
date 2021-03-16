@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'favorites',
     loadChildren: () => import('./components/favorites/favorites.module').then(m => m.FavoritesModule)
   },
+  {
+    path: 'settings',
+    loadChildren: () => import('./components/settings/settings.module').then(m => m.SettingsModule)
+  },
 ];
 
 @NgModule({
