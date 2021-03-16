@@ -1,0 +1,31 @@
+@import '../../../../../styles.scss';
+
+section {
+  &.next-step-screen {
+    .phone-img {
+      display: block;
+      margin: auto;
+      img {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    form {
+      &.number-input {
+        padding-top: 18%;
+        margin-bottom: 18%;
+      }
+    }
+    .nda-btns {
+      a {
+        &.click {
+          background: $white;
+          border: 1px solid #028b67;
+          color: #028b67;
+        }
+      }
+    }
+  }
+}
