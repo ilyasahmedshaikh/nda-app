@@ -1,0 +1,9 @@
+@import '../../../../styles.scss';
+
+section {
+  &.edit-profile-screen {
+    .update-btn {
+      padding-top: 20px;
+    }
+  }
+}

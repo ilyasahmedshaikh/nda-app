@@ -5,11 +5,11 @@ import { SettingsRoutingModule } from './settings-routing.module';
 import { SettingsComponent } from './settings.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
-import { GeoLocationComponent } from './geo-location/geo-location.component';
+import { AddCreditsComponent } from './add-credits/add-credits.component';
 
 
 @NgModule({
-  declarations: [SettingsComponent, EditProfileComponent, ChangePasswordComponent, GeoLocationComponent],
+  declarations: [SettingsComponent, EditProfileComponent, ChangePasswordComponent, AddCreditsComponent],
   imports: [
     CommonModule,
     SettingsRoutingModule

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GeoLocationComponent } from './geo-location.component';
+import { AddCreditsComponent } from './add-credits.component';
 
-describe('GeoLocationComponent', () => {
-  let component: GeoLocationComponent;
-  let fixture: ComponentFixture<GeoLocationComponent>;
+describe('AddCreditsComponent', () => {
+  let component: AddCreditsComponent;
+  let fixture: ComponentFixture<AddCreditsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GeoLocationComponent ]
+      declarations: [ AddCreditsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GeoLocationComponent);
+    fixture = TestBed.createComponent(AddCreditsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

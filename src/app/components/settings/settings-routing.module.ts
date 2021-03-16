@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SettingsComponent } from './settings.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
-import { GeoLocationComponent } from './geo-location/geo-location.component';
+import { AddCreditsComponent } from './add-credits/add-credits.component';
 
 
 const routes: Routes = [
@@ -25,8 +25,8 @@ const routes: Routes = [
     component: EditProfileComponent
   },
   {
-    path: 'geo-location',
-    component: GeoLocationComponent
+    path: 'add-credits',
+    component: AddCreditsComponent
   },
 ];
 

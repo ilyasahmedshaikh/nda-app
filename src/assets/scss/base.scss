@@ -36,16 +36,13 @@ section {
   }
 }
 
-.form-group {
-  &.box-input {
-    input {
-      font-size: 35px !important;
-      font-weight: 500 !important;
-      border: 1px solid #e7e7e7 !important;
-      padding: 45px 27px !important;
-      color: #000000 !important;
-      background-color: #f9f9f9 !important;
-    }
+.boxed-input {
+  input {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background: $fade;
   }
 }
 
