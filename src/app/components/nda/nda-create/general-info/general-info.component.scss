@@ -1,0 +1,26 @@
+@import '../../../../../styles.scss';
+
+section {
+  &.general-info-screen {
+    .agree {
+      .digital-sign {
+        padding-top: 18px;
+        a {
+          text-decoration: none;
+          color: $black;
+          font-size: 13px;
+          i {
+            color: #31d5a1;
+            font-size: 19px;
+            padding-right: 8px;
+          }
+        }
+      }
+      .next-btn {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
