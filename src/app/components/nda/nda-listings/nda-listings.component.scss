@@ -1,0 +1,16 @@
+@import '../../../../styles.scss';
+
+section {
+  &.nda-listings-screen {
+    .card {
+      margin-bottom: 12px;
+      h5 {
+        color: $black;
+      }
+      p {
+        color: $black;
+        padding-top: 8px;
+      }
+    }
+  }
+}

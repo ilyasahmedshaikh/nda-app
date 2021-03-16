@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'settings',
     loadChildren: () => import('./components/settings/settings.module').then(m => m.SettingsModule)
   },
+  {
+    path: 'nda',
+    loadChildren: () => import('./components/nda/nda.module').then(m => m.NdaModule)
+  },
 ];
 
 @NgModule({
