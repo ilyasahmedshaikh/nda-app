@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'nda',
     loadChildren: () => import('./components/nda/nda.module').then(m => m.NdaModule)
   },
+  {
+    path: 'payment',
+    loadChildren: () => import('./components/payment/payment.module').then(m => m.PaymentModule)
+  },
 ];
 
 @NgModule({

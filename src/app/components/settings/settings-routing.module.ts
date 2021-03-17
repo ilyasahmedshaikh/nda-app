@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { SettingsComponent } from './settings.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
-import { AddCreditsComponent } from './add-credits/add-credits.component';
 
 
 const routes: Routes = [
@@ -23,10 +22,6 @@ const routes: Routes = [
   {
     path: 'edit-profile',
     component: EditProfileComponent
-  },
-  {
-    path: 'add-credits',
-    component: AddCreditsComponent
   },
 ];
 
