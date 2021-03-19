@@ -1,0 +1,43 @@
+@import '../../../../styles.scss';
+
+section {
+  &.add-card-screen {
+    .accept-cards {
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #6b6b6b;
+        text-align: right;
+        padding-top: 3px;
+
+      }
+      img {
+        width: 170px;
+        height: auto;
+      }
+    }
+    .add-card-inputs {
+      .cutom-input {
+        position: relative;
+        .camera {
+          i {
+            position: absolute;
+            right: 0px;
+            bottom: 9px;
+            color: #4fdba3;
+            font-size: 18px;
+          }
+        }
+        .question-mark {
+          i {
+            position: absolute;
+            right: 3px;
+            bottom: 10px;
+            color: #4fdba3;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
