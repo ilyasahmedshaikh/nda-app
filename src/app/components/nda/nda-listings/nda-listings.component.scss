@@ -4,12 +4,35 @@ section {
   &.nda-listings-screen {
     .card {
       margin-bottom: 12px;
-      h5 {
-        color: $black;
+      .heading {
+        h5 {
+          color: $black;
+        }
+        a {
+          i {
+            color: #ff7800;
+            font-size: 18px;
+          }
+        }
       }
       p {
         color: $black;
-        padding-top: 8px;
+        padding-top: 10px;
+      }
+      .edit-btn {
+        text-align: center;
+        padding-bottom: 12px;
+        a {
+          i {
+            color: #19d09f;
+            font-size: 18px;
+            span {
+              color: #19d09f;
+              font-size: 18px;
+              padding-left: 12px;
+            }
+          }
+        }
       }
     }
   }

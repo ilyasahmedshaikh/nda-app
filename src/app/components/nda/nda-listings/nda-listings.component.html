@@ -1,9 +1,20 @@
 <section class="nda-listings-screen">
   <div class="container">
     <div class="card" *ngFor="let item of List">
-      <div class="card-body">
-        <h5 class="card-title">{{item.title}}</h5>
+      <div class="card-body pb-0">
+        <div class="heading d-flex justify-content-between">
+          <h5 class="card-title">{{item.title}}</h5>
+          <a href="#"><i class="far fa-edit"></i></a>
+        </div>
         <p class="card-text">{{item.content}}</p>
+      </div>
+      <hr>
+      <div class="edit-btn">
+        <a href="#">
+          <i class="fas fa-pencil-alt">
+            <span>Describe</span>
+          </i>
+        </a>
       </div>
     </div>
   </div>
