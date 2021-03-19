@@ -1,0 +1,72 @@
+@import '../../../../styles.scss';
+
+section {
+  &.payment-method-screen {
+    .payment-methods {
+      .heading {
+        p {
+          color: #6b6b6b;
+          font-size: 16px;
+          font-weight: 500;
+          padding-bottom: 10px;
+        }
+      }
+      .card {
+        a {
+          text-decoration: none;
+          font-size: 18px;
+          color: #696969;
+          i {
+            color: #696969;
+            font-size: 19px;
+            padding-right: 10px;
+          }
+        }
+        img {
+          width: 90px;
+          height: auto;
+          object-fit: cover;
+          object-position: center;
+        }
+        .right-arrow {
+          i {
+            color: #959595;
+            float: right;
+            font-size: 17px;
+            padding-top: 4px;
+          }
+        }
+      }
+    }
+    .new-card {
+      .heading {
+        p {
+          color: #6b6b6b;
+          font-size: 16px;
+          font-weight: 500;
+          padding-bottom: 10px;
+        }
+      }
+      .card {
+        a {
+          text-decoration: none;
+          font-size: 18px;
+          color: #01ca9c;
+          i {
+            color: #01ca9c;
+            font-size: 19px;
+            padding-right: 10px;
+          }
+        }
+        .right-arrow {
+          i {
+            color: #959595;
+            float: right;
+            font-size: 17px;
+            padding-top: 4px;
+          }
+        }
+      }
+    }
+  }
+}

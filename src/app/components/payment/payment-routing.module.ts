@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PaymentComponent } from './payment.component';
 import { AddCreditsComponent } from '../payment/add-credits/add-credits.component';
+import { AddCardComponent } from '../payment/add-card/add-card.component';
+import { PaymentMethodComponent } from '../payment/payment-method/payment-method.component';
+
 
 const routes: Routes = [
   {
@@ -16,6 +19,14 @@ const routes: Routes = [
   {
     path: 'add-credits',
     component: AddCreditsComponent
+  },
+  {
+    path: 'add-card',
+    component: AddCardComponent
+  },
+  {
+    path: 'payment-method',
+    component: PaymentMethodComponent
   },
 ];
 
