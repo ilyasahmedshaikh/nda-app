@@ -6,6 +6,9 @@ header {
     background-color: $white;
     height: 55px;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
     img {
       width: 40px;
       height: auto;

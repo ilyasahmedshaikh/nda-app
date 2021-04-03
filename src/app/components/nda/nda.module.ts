@@ -10,12 +10,14 @@ import { GeneralInfoComponent } from './nda-create/general-info/general-info.com
 import { DigitalSignatureComponent } from './nda-create/digital-signature/digital-signature.component';
 import { NextStepComponent } from './nda-create/next-step/next-step.component';
 
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   declarations: [NdaComponent, NdaDetailsComponent, NdaListingsComponent, NdaCreateComponent, GeneralInfoComponent, DigitalSignatureComponent, NextStepComponent],
   imports: [
     CommonModule,
-    NdaRoutingModule
+    NdaRoutingModule,
+    SharedModule
   ]
 })
 export class NdaModule { }

@@ -9,23 +9,25 @@ import { NdaCreateComponent } from './nda-create/nda-create.component';
 const routes: Routes = [
   {
     path: '',
-    component: NdaComponent
-  },
-  {
-    path: 'nda',
-    component: NdaComponent
-  },
-  {
-    path: 'nda-listings',
-    component: NdaListingsComponent
-  },
-  {
-    path: 'nda-details',
-    component: NdaDetailsComponent
-  },
-  {
-    path: 'nda-create',
-    component: NdaCreateComponent
+    component: NdaComponent,
+    children: [
+      {
+        path: '',
+        component: NdaListingsComponent
+      },
+      {
+        path: 'nda-listings',
+        component: NdaListingsComponent
+      },
+      {
+        path: 'nda-details',
+        component: NdaDetailsComponent
+      },
+      {
+        path: 'nda-create',
+        component: NdaCreateComponent
+      }
+    ]
   },
 ];
 

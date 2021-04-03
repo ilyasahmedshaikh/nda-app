@@ -14,10 +14,6 @@ a {
     text-decoration: none;
 }
 
-section {
-    padding: 20px 0 0 0;
-}
-
 .input-box {
     border: 1px solid #e7e7e7;
     padding: 10px;
@@ -81,19 +77,25 @@ input[type="color"]:focus,
 }
 
 .form-control:focus {
-    border-color: none;
-    outline: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  border-color: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .main-header-space {
-    position: relative;
-    top: 55px;
+  position: relative;
+  padding: 55px 0;
 }
 
 .loading {
-    width: 200px;
-    display: block;
-    margin: auto;
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+div {
+  &:focus {
+    outline: none;
+  }
 }
