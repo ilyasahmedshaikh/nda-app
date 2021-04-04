@@ -8,8 +8,6 @@ section {
       img {
         width: 70px;
         height: 70px;
-        // object-fit: cover;
-        // object-position: center;
       }
     }
     form {
@@ -18,18 +16,20 @@ section {
           position: relative;
           i {
             position: absolute;
-            padding-top: 9px;
+            padding-top: 15px;
+            padding-left: 10px;
             color: #8d8b8b;
             font-size: 20px;
           }
           input {
-            padding-left: 35px;
+            padding-left: 45px;
+            height: 50px;
           }
           .eye-icon {
             i {
               position: absolute;
-              right: 0px;
-              bottom: 8px;
+              right: 5px;
+              bottom: 15px;
               color: #8d8b8b;
               font-size: 18px;
             }
