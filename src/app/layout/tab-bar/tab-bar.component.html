@@ -1,13 +1,13 @@
 <div class="tab-bar">
     <div class="tabs">
-        <div class="tab" routerLink="/favorites">
+        <div class="tab" routerLink="/favorites" (click)="toggleBack()">
             <i class="fas fa-heart"></i>
             <p>Favorites</p>
         </div>
-        <div class="tab circular" routerLink="/nda/nda-create">
+        <div class="tab circular" routerLink="/nda/nda-create" (click)="toggleBack()">
             <i class="fas fa-plus"></i>
         </div>
-        <div class="tab" routerLink="/settings">
+        <div class="tab" routerLink="/settings" (click)="toggleBack()">
             <i class="fas fa-cog"></i>
             <p>Settings</p>
         </div>

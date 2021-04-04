@@ -1,3 +1,5 @@
-<app-general-info></app-general-info>
-<!-- <app-digital-signature></app-digital-signature> -->
-<!-- <app-next-step></app-next-step> -->
+<div class="py-4">
+    <app-general-info *ngIf="step==1" (stepFn)="getStep($event)"></app-general-info>
+    <app-digital-signature *ngIf="step==2"></app-digital-signature>
+    <app-next-step *ngIf="step==3"></app-next-step>
+</div>

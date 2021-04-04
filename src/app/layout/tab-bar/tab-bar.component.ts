@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{ BackNavigateService } from '../../core/services/back-navigate/back-navigate.service';
 
 @Component({
   selector: 'app-tab-bar',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private backNavigateService: BackNavigateService,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  toggleBack() {
+    this.backNavigateService.toggleBackState();
   }
 
 }

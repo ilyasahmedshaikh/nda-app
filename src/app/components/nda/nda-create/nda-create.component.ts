@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NdaCreateComponent implements OnInit {
 
+  step: number = 1;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getStep(event) {
+    this.step = event;
   }
 
 }
