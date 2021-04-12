@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-digital-signature',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DigitalSignatureComponent implements OnInit {
 
+  @Output() sign = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getSignature(signature) {
+    this.sign.emit(signature);
   }
 
 }

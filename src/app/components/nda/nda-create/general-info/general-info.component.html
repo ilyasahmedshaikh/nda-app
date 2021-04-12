@@ -7,9 +7,13 @@
     </div>
     <div class="card mt-3">
       <div class="card-body content">
-        <p>My name is <a class="text-primary" (click)="getPersonGiving()">{{personGiving}}</a>. I am over 18 years of age and of sound mind.</p>
-        <p class="py-3">I consent to engaging in sexual activity with <a class="text-primary" (click)="getPersonSeeking()">{{personSeeking}}</a> on <a class="text-primary" (click)="getDated()">{{dated}}</a>.</p>
-        <p>My consent agreement will be permanently stored and remain confidential by YesisYes, unless I dispute at a later time that the sexual activity was consensual."</p>
+        <p>My name is <a class="text-primary" (click)="getPersonGiving()">{{personGiving}}</a>. I am over 18 years of
+          age and of sound mind.</p>
+        <p class="py-3">I consent to engaging in sexual activity with <a class="text-primary"
+            (click)="getPersonSeeking()">{{personSeeking}}</a> on <a class="text-primary"
+            (click)="getDated()">{{dated}}</a>.</p>
+        <p>My consent agreement will be permanently stored and remain confidential by YesisYes, unless I dispute at a
+          later time that the sexual activity was consensual."</p>
       </div>
     </div>
     <div class="card mt-5">
@@ -24,14 +28,14 @@
             </div>
             <div class="digital-sign d-flex">
               <a (click)="changeStep(2)">
-                  <i class="fas fa-download"></i>
-                  Digital Signature
+                <i class="fas fa-download"></i>
+                Digital Signature
               </a>
             </div>
           </div>
           <div class="col-5 d-block m-auto">
             <div class="next-btn">
-              <a class="rounded-btn w-100">NEXT STEP</a>
+              <a class="rounded-btn w-100" (click)="changeStep(3)">NEXT STEP</a>
             </div>
           </div>
         </div>
