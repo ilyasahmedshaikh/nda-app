@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { FormsModule } from '@angular/forms';
+
 import { NdaRoutingModule } from './nda-routing.module';
 import { NdaComponent } from './nda.component';
 import { NdaDetailsComponent } from './nda-details/nda-details.component';
@@ -17,7 +19,8 @@ import { SharedModule } from '../../shared/shared.module';
   imports: [
     CommonModule,
     NdaRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class NdaModule { }
