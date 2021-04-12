@@ -9,6 +9,9 @@ export class NdaCreateComponent implements OnInit {
 
   step: number = 1;
 
+  generalInfo: any = {};
+  signature: any = {};
+
   constructor() { }
 
   ngOnInit(): void {
@@ -20,15 +23,21 @@ export class NdaCreateComponent implements OnInit {
   }
 
   nextStep() {
-    
+    if (this.generalInfo && this.signature && this.generalInfo.agree) {
+      this.step = 3;
+    } else {
+      console.log('data is not completed');
+    }
   }
 
   getGeneralInfo(info) {
     console.log(info);
+    this.generalInfo = info;
   }
 
   getSignature(sign) {
     console.log(sign);
+    this.signature = sign;
   }
 
 }

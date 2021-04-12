@@ -13,6 +13,7 @@ export class GeneralInfoComponent implements OnInit {
   personGiving: string = "(name of person giving consent)";
   personSeeking: string = "(name of person seeking consent)";
   dated: string = "(date of potential sexual activity)";
+  agree: boolean = false;
 
   constructor() { }
 
@@ -40,11 +41,16 @@ export class GeneralInfoComponent implements OnInit {
     this.getGeneralInfo();
   }
 
+  changeAgree(event) {
+    this.agree = event.target.value;
+  }
+
   getGeneralInfo() {
     let data = {
       personGiving: this.personGiving,
       personSeeking: this.personSeeking,
-      dated: this.dated
+      dated: this.dated,
+      agree: this.agree
     };
 
     this.generalInfo.emit(data)
