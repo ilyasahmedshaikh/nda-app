@@ -19,17 +19,16 @@ export class NdaCreateComponent implements OnInit {
 
   ngOnInit(): void {
     this.dataSharing.generalInfo.subscribe(info => {
-      console.log(info);
       this.generalInfo = info;
+
+      console.log(info);
     });
 
     this.dataSharing.signature.subscribe(sign => {
-      // console.log(sign);
       this.signature = sign;
+      
+      console.log(sign);
     });
-  }
-
-  ngOnChanges(changes: SimpleChanges): void {
   }
 
   getStep(event) {

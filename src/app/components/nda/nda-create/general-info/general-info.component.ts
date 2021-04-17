@@ -21,7 +21,11 @@ export class GeneralInfoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.dataSharing.setGeneralInfo();
+    if (!this.generalInfo.agree) {
+      this.dataSharing.setGeneralInfo();
+    }
+
+    this.agree = this.generalInfo.agree
   }
   
   changeStep(step) {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-next-step',
@@ -6,10 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./next-step.component.scss']
 })
 export class NextStepComponent implements OnInit {
+  
+  @Output() stepFn = new EventEmitter<any>();
 
-  constructor() { }
+  @Input('generalInfo') generalInfo: any;
+  @Input('signature') signature: any;
+
+  constructor(
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  changeStep(step) {
+    this.stepFn.emit(step);
+  }
+
+  save() {
+    console.log(this.generalInfo);
+    console.log(this.signature);
   }
 
 }
