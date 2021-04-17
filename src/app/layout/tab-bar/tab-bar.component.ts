@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import{ BackNavigateService } from '../../core/services/back-navigate/back-navigate.service';
+import { PresentationalService } from '../../core/services/presentational/presentational.service';
 
 @Component({
   selector: 'app-tab-bar',
@@ -8,15 +9,21 @@ import{ BackNavigateService } from '../../core/services/back-navigate/back-navig
 })
 export class TabBarComponent implements OnInit {
 
+  tabBarShow: boolean = true;
+
   constructor(
     private backNavigateService: BackNavigateService,
+    private presentationalS: PresentationalService
   ) { }
 
   ngOnInit(): void {
+    this.presentationalS.bottomBar.subscribe(res => {
+      this.tabBarShow = res;
+    })
   }
 
-  toggleBack() {
-    this.backNavigateService.toggleBackState();
+  toggleBack(state?) {
+    this.backNavigateService.toggleBackState(state);
   }
 
 }

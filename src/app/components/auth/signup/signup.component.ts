@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { PresentationalService } from '../../../core/services/presentational/presentational.service';
 
 @Component({
   selector: 'app-signup',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private presentationalS: PresentationalService
+  ) { }
 
   ngOnInit(): void {
+    this.presentationalS.setPresentation('header', true);
+    this.presentationalS.setPresentation('bottomBar', false);
+  }
+
+  signup() {
+    this.router.navigateByUrl('/auth/login');
   }
 
 }

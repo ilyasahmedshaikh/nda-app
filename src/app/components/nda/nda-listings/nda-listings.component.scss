@@ -23,14 +23,11 @@ section {
         text-align: center;
         padding-bottom: 12px;
         a {
-          i {
-            color: #19d09f;
-            font-size: 18px;
-            span {
-              color: #19d09f;
-              font-size: 18px;
-              padding-left: 12px;
-            }
+          color: #19d09f;
+          font-size: 18px;
+          text-decoration: none;
+          span {
+            padding-left: 12px;
           }
         }
       }
