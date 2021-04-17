@@ -12,6 +12,8 @@ export class NextStepComponent implements OnInit {
   @Input('generalInfo') generalInfo: any;
   @Input('signature') signature: any;
 
+  mobile: number = 0;
+
   constructor(
   ) { }
 
@@ -22,8 +24,13 @@ export class NextStepComponent implements OnInit {
     this.stepFn.emit(step);
   }
 
+  changeMobile(event) {
+    this.mobile = event.target.value;
+  }
+
   save() {
     console.log(this.generalInfo);
+    console.log(this.mobile);
     console.log(this.signature);
   }
 

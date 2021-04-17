@@ -5,11 +5,11 @@
         <img src="../../../../../assets/img/call-icon.png" alt="icon">
       </div>
     </div>
-    <form class="number-input">
+    <div class="number-input">
       <div class="form-group cutom-input">
-        <input type="number" class="form-control" placeholder="Enter Partner's Mobile Number">
+        <input type="number" class="form-control" placeholder="Enter Partner's Mobile Number" [(ngModel)]="mobile" (change)="changeMobile($event)">
       </div>
-    </form>
+    </div>
 
     <div class="nda-btns">
       <a class="rounded-btn w-100 click" (click)="changeStep(1)">CLICK HERE TO NDA</a>
