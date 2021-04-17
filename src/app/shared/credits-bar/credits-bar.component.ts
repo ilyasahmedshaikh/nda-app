@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-credits-bar',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./credits-bar.component.scss']
 })
 export class CreditsBarComponent implements OnInit {
+
+  @Input('credits') credits: number = 0;
 
   constructor() { }
 
