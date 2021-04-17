@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SimpleChanges } from '@angular/core';
+import { DataSharingService } from '../../../core/services/data-sharing/data-sharing.service';
 
 @Component({
   selector: 'app-nda-create',
@@ -12,9 +13,23 @@ export class NdaCreateComponent implements OnInit {
   generalInfo: any = {};
   signature: any = {};
 
-  constructor() { }
+  constructor(
+    private dataSharing: DataSharingService
+  ) { }
 
   ngOnInit(): void {
+    this.dataSharing.generalInfo.subscribe(info => {
+      console.log(info);
+      this.generalInfo = info;
+    });
+
+    this.dataSharing.signature.subscribe(sign => {
+      // console.log(sign);
+      this.signature = sign;
+    });
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
   }
 
   getStep(event) {
@@ -28,16 +43,6 @@ export class NdaCreateComponent implements OnInit {
     } else {
       console.log('data is not completed');
     }
-  }
-
-  getGeneralInfo(info) {
-    console.log(info);
-    this.generalInfo = info;
-  }
-
-  getSignature(sign) {
-    console.log(sign);
-    this.signature = sign;
   }
 
 }

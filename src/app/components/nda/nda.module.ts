@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { FormsModule } from '@angular/forms';
+import { NgWhiteboardModule } from 'ng-whiteboard';
 
 import { NdaRoutingModule } from './nda-routing.module';
 import { NdaComponent } from './nda.component';
@@ -20,7 +21,8 @@ import { SharedModule } from '../../shared/shared.module';
     CommonModule,
     NdaRoutingModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    NgWhiteboardModule
   ]
 })
 export class NdaModule { }

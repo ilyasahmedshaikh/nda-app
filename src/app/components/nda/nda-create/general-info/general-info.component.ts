@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { DataSharingService } from '../../../../core/services/data-sharing/data-sharing.service';
 
 @Component({
   selector: 'app-general-info',
@@ -8,18 +9,21 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class GeneralInfoComponent implements OnInit {
 
   @Output() stepFn = new EventEmitter<any>();
-  @Output() generalInfo = new EventEmitter<any>();
+  @Input('generalInfo') generalInfo: any;
 
   personGiving: string = "(name of person giving consent)";
   personSeeking: string = "(name of person seeking consent)";
   dated: string = "(date of potential sexual activity)";
   agree: boolean = false;
 
-  constructor() { }
+  constructor(
+    private dataSharing: DataSharingService
+  ) { }
 
   ngOnInit(): void {
+    this.dataSharing.setGeneralInfo();
   }
-
+  
   changeStep(step) {
     if (this.personGiving && this.personSeeking && this.dated) {
       this.stepFn.emit(step);
@@ -43,6 +47,7 @@ export class GeneralInfoComponent implements OnInit {
 
   changeAgree(event) {
     this.agree = event.target.value;
+    this.getGeneralInfo();
   }
 
   getGeneralInfo() {
@@ -53,7 +58,7 @@ export class GeneralInfoComponent implements OnInit {
       agree: this.agree
     };
 
-    this.generalInfo.emit(data)
+    this.dataSharing.setData(1, data);
   }
 
 }

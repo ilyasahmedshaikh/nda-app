@@ -19,3 +19,5 @@ git rebase upstream/main
 # push the updated got changes with your repo/branch
 git push origin main
 
+# Angular WhiteBoard (ng-whiteboard)
+https://npm.io/package/ng-whiteboard
