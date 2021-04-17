@@ -24,8 +24,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.backNavigateService.back.subscribe(res => {
       this.backBtnState = res;
-      console.log(this.backBtnState);
-      
     });
 
     this.presentationalS.header.subscribe(res => {
