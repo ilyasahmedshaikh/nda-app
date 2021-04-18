@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpBackend, HttpClient } from '@angular/common/http';
 
 import { environment } from 'src/environments/environment';
 
@@ -8,9 +8,13 @@ import { environment } from 'src/environments/environment';
 })
 export class ApiCallService {
 
+  private http: HttpClient;
+
   constructor(
-    private http: HttpClient
-  ) { }
+    httpBackend: HttpBackend
+  ) {
+    this.http = new HttpClient(httpBackend);
+  }
 
   post(table, data) {
     return this.http.post(`${environment.API_BASE_URL}/${table}.json`, data);

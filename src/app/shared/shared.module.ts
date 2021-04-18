@@ -2,16 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CreditsBarComponent } from './credits-bar/credits-bar.component';
+import{ LoaderComponent } from './loader/loader.component'
 
 @NgModule({
   declarations: [
-    CreditsBarComponent
+    CreditsBarComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    CreditsBarComponent
+    CreditsBarComponent,
+    LoaderComponent
   ]
 })
 export class SharedModule { }
