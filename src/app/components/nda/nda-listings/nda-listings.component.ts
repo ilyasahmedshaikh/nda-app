@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ConfigService } from '../../../core/http/config/config.service';
 import { ApiCallService } from '../../../core/http/api-call/api-call.service';
+import{ BackNavigateService } from '../../../core/services/back-navigate/back-navigate.service';
 
 @Component({
   selector: 'app-nda-listings',
@@ -14,8 +16,10 @@ export class NdaListingsComponent implements OnInit {
   List: any = []
 
   constructor(
+    private router: Router,
     private config: ConfigService,
-    private apiCallService: ApiCallService
+    private apiCallService: ApiCallService,
+    private backNavigateService: BackNavigateService,
   ) { }
 
   ngOnInit(): void {
@@ -30,6 +34,15 @@ export class NdaListingsComponent implements OnInit {
       if (this.List.length <= 3) this.creditsCount = 3 - this.List.length; 
       else this.creditsCount = 0;
     })
+  }
+
+  toggleBack(state?) {
+    this.backNavigateService.toggleBackState(state);
+  }
+
+  describe(item) {
+    this.router.navigate(['/nda/nda-details'], { state: { data: item } });
+    this.toggleBack(true);
   }
 
 }
