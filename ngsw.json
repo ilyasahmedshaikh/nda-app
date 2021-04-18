@@ -1,0 +1,133 @@
+{
+  "configVersion": 1,
+  "timestamp": 1618778289620,
+  "index": "https://ilyasahmedshaikh.github.io/nda-app/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://ilyasahmedshaikh.github.io/nda-app/10.f2b134a14e621182075c.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/11.1975a1ab8dae8423eff8.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/2.c1a36ddabde2cd011f6a.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/6.97a994cf6701d260a9f5.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/7.55ee672cdb4c817ef598.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/8.2db352b55c32cb7c7e60.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/9.13d91172013657eae808.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/common.bb61939a950720e0ecb6.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/favicon.ico",
+        "https://ilyasahmedshaikh.github.io/nda-app/index.html",
+        "https://ilyasahmedshaikh.github.io/nda-app/main.347ee4c0b9cb5d104046.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/manifest.webmanifest",
+        "https://ilyasahmedshaikh.github.io/nda-app/polyfills.3227b3cecbd90ee455b5.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/runtime.035da083fc25fca177db.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/styles.1255431cc41d0b131460.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-128x128.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-144x144.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-152x152.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-192x192.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-384x384.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-512x512.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-72x72.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-96x96.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/img/call-icon.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/img/content-loading.gif",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/img/detailer.jpg",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/img/icon.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/img/img-upload-icon.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/img/loading.gif",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/img/login-dotted-bg.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/img/pm1.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/img/text-logo.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/img/we-accept-payments.png",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/js/bootstrap.min.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/js/jquery.min.js",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/scss/base.scss",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/scss/bootstrap.min.css",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/scss/buttons.scss",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/scss/colours.scss",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/scss/mixins.scss",
+        "https://ilyasahmedshaikh.github.io/nda-app/assets/scss/variables.scss"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://ilyasahmedshaikh.github.io/nda-app/10.f2b134a14e621182075c.js": "dde6fb1c898e034d7f3bfee07443a938e0808a99",
+    "https://ilyasahmedshaikh.github.io/nda-app/11.1975a1ab8dae8423eff8.js": "f9ca40cdd76eab16e7466f9f3b440b96b0c484df",
+    "https://ilyasahmedshaikh.github.io/nda-app/2.c1a36ddabde2cd011f6a.js": "544458bb3fc81f4e13abeb27c6faca81f025e93f",
+    "https://ilyasahmedshaikh.github.io/nda-app/6.97a994cf6701d260a9f5.js": "2828b29256bd3783145232a06f90302a2dd0661f",
+    "https://ilyasahmedshaikh.github.io/nda-app/7.55ee672cdb4c817ef598.js": "a736c0a139cc33ed6e73d99697c6d5296c246d54",
+    "https://ilyasahmedshaikh.github.io/nda-app/8.2db352b55c32cb7c7e60.js": "43b18eda286a48e89d7895f6408a44f039398e79",
+    "https://ilyasahmedshaikh.github.io/nda-app/9.13d91172013657eae808.js": "117f2860aa48111fc1399650f8c4cccad336b081",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/img/call-icon.png": "34c1b5d81e852663c0882c7a30f588291e4e845c",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/img/content-loading.gif": "0d9e6940e726cd116a45e005a73792917c5f9520",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/img/detailer.jpg": "857650dc7768c8613249919ab34689845850a960",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/img/icon.png": "00c67539a041696db456088f9018b2dd022c0540",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/img/img-upload-icon.png": "f147f8f223a81c502f930d9548a8cfc643148b1b",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/img/loading.gif": "cfe67b2c4704546a194343ad1f9207ba50abd841",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/img/login-dotted-bg.png": "9c1b86e5413397c811d3d849a4ae4b9fe8ada322",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/img/pm1.png": "a9e8a10f5323abfc22c7e1fd0da62bffb6a4f3be",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/img/text-logo.png": "e4a02836ffb63e32692107ca7ea1c3f8d723ae11",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/img/we-accept-payments.png": "cf4579cf1a98e7784f84e46a3249de990e4444f4",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/js/bootstrap.min.js": "ed3c7a26df82e432b13b7e16d606ec6173cf7315",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/js/jquery.min.js": "29fa5ad995e9ec866ece1d3d0b698fc556580eee",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/scss/base.scss": "b9f217c38c42b7874ca40f70c9c8a83821f6a86b",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/scss/bootstrap.min.css": "334f40dd947ed1dc3247ee94d13b6f60410a17b4",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/scss/buttons.scss": "6fbab6c06f5bff89e208f2260467e6fb2db028dc",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/scss/colours.scss": "aee8702f0f8c171894fdf4f5cfee8c87fac71340",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/scss/mixins.scss": "0cea23c2a19274d00ad6072dc8d09adb2617a2bd",
+    "https://ilyasahmedshaikh.github.io/nda-app/assets/scss/variables.scss": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "https://ilyasahmedshaikh.github.io/nda-app/common.bb61939a950720e0ecb6.js": "38ee938810ae2a1572371ca5fd55fff1fdbbbf7b",
+    "https://ilyasahmedshaikh.github.io/nda-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://ilyasahmedshaikh.github.io/nda-app/index.html": "7b0aa27bfa99d9f8ac732254b45bcfb0c6eede8a",
+    "https://ilyasahmedshaikh.github.io/nda-app/main.347ee4c0b9cb5d104046.js": "072d27fa09d35fab7ab6e980dbac4cecc4b97ffd",
+    "https://ilyasahmedshaikh.github.io/nda-app/manifest.webmanifest": "5d48b31d826d57438eb68a7f13f5f7d173434fe0",
+    "https://ilyasahmedshaikh.github.io/nda-app/polyfills.3227b3cecbd90ee455b5.js": "48cbf5a28ef77014760cdc43e7e584925bb77aec",
+    "https://ilyasahmedshaikh.github.io/nda-app/runtime.035da083fc25fca177db.js": "48793c1fc5d813b77a3aeeb1964ad955e12187ed",
+    "https://ilyasahmedshaikh.github.io/nda-app/styles.1255431cc41d0b131460.css": "d136b91e038fd2c27f4c13a130903e2d246dd5f5"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
