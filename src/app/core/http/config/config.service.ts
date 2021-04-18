@@ -7,6 +7,7 @@ export class ConfigService {
 
   public tables: any = { 
     nda: 'nda',
+    users: 'users'
   }
 
   constructor() { }

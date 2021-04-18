@@ -7,25 +7,28 @@
       </div>
     </div>
 
-    <form class="signup-inputs">
+    <form class="signup-inputs" [formGroup]="programForm">
+
+      <div class="alert alert-danger" role="alert" *ngIf="error">{{errorMsg}}</div>
+
       <div class="form-row">
         <div class="form-group col cutom-input">
-          <input type="text" class="form-control" placeholder="First Name">
+          <input type="text" class="form-control" placeholder="First Name" formControlName="firstName">
         </div>
         <div class="form-group col cutom-input">
-          <input type="text" class="form-control" placeholder="Last Name">
+          <input type="text" class="form-control" placeholder="Last Name" formControlName="lastName">
         </div>
       </div>
 
       <div class="form-group cutom-input">
-        <input type="email" class="form-control" placeholder="Email">
+        <input type="email" class="form-control" placeholder="Email" formControlName="email">
       </div>
 
       <div class="form-group cutom-input">
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="password" class="form-control" placeholder="Password" formControlName="password">
       </div>
       <div class="form-group cutom-input">
-        <input type="password" class="form-control" placeholder="Confirm Password">
+        <input type="password" class="form-control" placeholder="Confirm Password" formControlName="cPassword">
       </div>
 
       <div class="signup-btn">

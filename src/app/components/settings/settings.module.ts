@@ -5,10 +5,11 @@ import { SettingsRoutingModule } from './settings-routing.module';
 import { SettingsComponent } from './settings.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { SettingsListComponent } from './settings-list/settings-list.component';
 
 
 @NgModule({
-  declarations: [SettingsComponent, EditProfileComponent, ChangePasswordComponent],
+  declarations: [SettingsComponent, EditProfileComponent, ChangePasswordComponent, SettingsListComponent],
   imports: [
     CommonModule,
     SettingsRoutingModule

@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { ConfigService } from '../../../../core/http/config/config.service';
 import { ApiCallService } from '../../../../core/http/api-call/api-call.service';
+import { LoginService } from '../../../../core/services/login/login.service';
 
 @Component({
   selector: 'app-next-step',
@@ -16,14 +17,17 @@ export class NextStepComponent implements OnInit {
   @Input('signature') signature: any;
 
   mobile: number;
+  user: any = {};
 
   constructor(
     private router: Router,
     private config: ConfigService,
+    private login: LoginService,
     private apiCallService: ApiCallService
   ) { }
 
   ngOnInit(): void {
+    this.user = this.login.getUserData();
   }
 
   changeStep(step) {
@@ -51,6 +55,7 @@ export class NextStepComponent implements OnInit {
       ...this.generalInfo,
       signature: this.convertSvgToString(this.signature),
       partner: this.mobile,
+      created_by: this.user.Id,
     }
 
     this.apiCallService.post(this.config.tables.nda, data).subscribe(res => {
