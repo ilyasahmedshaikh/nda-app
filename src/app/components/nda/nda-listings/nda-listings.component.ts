@@ -11,7 +11,7 @@ import{ BackNavigateService } from '../../../core/services/back-navigate/back-na
 })
 export class NdaListingsComponent implements OnInit {
 
-  creditsCount: number = 0;
+  creditsCount: number = 3;
 
   List: any = []
 

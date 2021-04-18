@@ -1,7 +1,7 @@
 <section class="nda-listings-screen">
   <app-credits-bar [credits]="creditsCount"></app-credits-bar>
 
-  <div class="container py-4">
+  <div class="container py-4" *ngIf="List.length > 0">
     <div class="card" *ngFor="let item of List">
       <div class="card-body pb-0">
         <div class="heading d-flex justify-content-between">
@@ -23,4 +23,6 @@
       </div>
     </div>
   </div>
+
+  <p class="text-muted text-center pt-3" *ngIf="List.length == 0">No data found.</p>
 </section>
