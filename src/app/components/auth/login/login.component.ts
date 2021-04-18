@@ -19,6 +19,8 @@ export class LoginComponent implements OnInit {
   loginStatus: boolean = false;
   Users: any = [];
 
+  showPassword: boolean = false;
+
   constructor(
     private fb: FormBuilder,
     private router: Router,
@@ -89,6 +91,12 @@ export class LoginComponent implements OnInit {
         this.router.navigateByUrl('/nda/nda-listing');
       }
     })
+  }
+
+  togglePassword() {
+    this.showPassword = !this.showPassword;
+    console.log(this.showPassword);
+    
   }
 
 }

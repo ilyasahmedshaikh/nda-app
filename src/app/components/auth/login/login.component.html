@@ -14,9 +14,11 @@
 
       <div class="form-group cutom-input">
         <i class="fas fa-lock"></i>
-        <input type="password" class="form-control" placeholder="Password" formControlName="password">
+        <input type="{{showPassword ? 'text' : 'password' }}" class="form-control" placeholder="Password" formControlName="password">
         <div class="eye-icon">
-          <i class="fas fa-eye"></i>
+          <a (click)="togglePassword()">
+            <i class="{{showPassword ? 'fas fa-eye-slash' : 'fas fa-eye' }}"></i>
+          </a>
         </div>
       </div>
 
