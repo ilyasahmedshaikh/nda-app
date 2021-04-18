@@ -31,14 +31,6 @@ export class SignupComponent implements OnInit {
     this.presentationalS.setPresentation('bottomBar', false);
 
     this.formInit();
-
-    // this.programForm.valueChanges.subscribe(res => {
-    //   if (res.password && res.cPassword && res.password != res.cPassword) {
-    //     this.error = true;
-    //     this.errorMsg = "Password fields doesn't match."
-    //     setTimeout(() => { this.error = false; }, 1000);
-    //   }
-    // })
   }
 
   formInit() {
