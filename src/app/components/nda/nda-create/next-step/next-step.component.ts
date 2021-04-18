@@ -35,10 +35,15 @@ export class NextStepComponent implements OnInit {
   }
 
   convertSvgToString(svg) {
-    var s = new XMLSerializer();
-    var str = s.serializeToString(svg);
+    if (svg.nodeType === Node.ELEMENT_NODE) {
+      var s = new XMLSerializer();
+      var str = s.serializeToString(svg);
 
-    return str;
+      return str;
+    }
+    else {
+      return '';
+    }
   }
 
   save() {

@@ -9,7 +9,7 @@
             <span class="text-capitalize">{{item.personGiving}} </span>
             <small class="text-black-50">{{item.dated}}</small>
           </h5>
-          <a><i class="far fa-edit"></i></a>
+          <a *ngIf="item.signature"><i class="far fa-edit"></i></a>
         </div>
         <p class="card-text">My name is <a class="text-dark font-weight-bold">{{item.personGiving}}</a>. I am over 18 years of
           age and of sound mind.</p>
