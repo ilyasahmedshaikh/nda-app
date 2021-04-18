@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
-import { FormsModule } from '@angular/forms';
 import { NgWhiteboardModule } from 'ng-whiteboard';
 
 import { environment } from '../environments/environment';
@@ -22,6 +21,7 @@ import { TabBarComponent } from './layout/tab-bar/tab-bar.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { SharedModule } from './shared/shared.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,6 +39,7 @@ import { SharedModule } from './shared/shared.module';
       registrationStrategy: 'registerWhenStable:30000'
     }),
     FormsModule,
+    ReactiveFormsModule,
     NgWhiteboardModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
