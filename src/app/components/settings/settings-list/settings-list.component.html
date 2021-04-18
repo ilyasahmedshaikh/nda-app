@@ -1,0 +1,40 @@
+<section class="settings-screen py-4">
+    <div class="container">
+        <div class="list">
+            <ul class="list-group">
+                <li routerLink="/settings/edit-profile" (click)="toggleBack(true)"
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    Edit Profile
+                    <i class="fas fa-chevron-right"></i>
+                </li>
+                <li routerLink="/settings/change-password" (click)="toggleBack(true)"
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    Change Password
+                    <i class="fas fa-chevron-right"></i>
+                </li>
+                <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    Add Credits
+                    <i class="fas fa-chevron-right"></i>
+                </li>
+                <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    Geo Location
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1"></label>
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    Notification
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                        <label class="custom-control-label" for="customSwitch2"></label>
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center logout"
+                    routerLink="/auth/login">
+                    Logout
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
