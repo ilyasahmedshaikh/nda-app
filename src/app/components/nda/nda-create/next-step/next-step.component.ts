@@ -1,4 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
+import { ConfigService } from '../../../../core/http/config/config.service';
+import { ApiCallService } from '../../../../core/http/api-call/api-call.service';
 
 @Component({
   selector: 'app-next-step',
@@ -12,9 +15,12 @@ export class NextStepComponent implements OnInit {
   @Input('generalInfo') generalInfo: any;
   @Input('signature') signature: any;
 
-  mobile: number = 0;
+  mobile: number;
 
   constructor(
+    private router: Router,
+    private config: ConfigService,
+    private apiCallService: ApiCallService
   ) { }
 
   ngOnInit(): void {
@@ -28,10 +34,26 @@ export class NextStepComponent implements OnInit {
     this.mobile = event.target.value;
   }
 
+  convertSvgToString(svg) {
+    var s = new XMLSerializer();
+    var str = s.serializeToString(svg);
+
+    return str;
+  }
+
   save() {
-    console.log(this.generalInfo);
-    console.log(this.mobile);
-    console.log(this.signature);
+    let data = {
+      ...this.generalInfo,
+      signature: this.convertSvgToString(this.signature),
+      partner: this.mobile,
+    }
+
+    this.apiCallService.post(this.config.tables.nda, data).subscribe(res => {
+      if (res) {
+        alert('NDA Saved.');
+        this.router.navigateByUrl('/nda/nda-listings');
+      }
+    });
   }
 
 }

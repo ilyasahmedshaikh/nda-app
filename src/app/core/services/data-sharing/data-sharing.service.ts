@@ -26,9 +26,9 @@ export class DataSharingService {
 
   setGeneralInfo() {
     let data = {
-      personGiving: "(name of person giving consent) 1",
-      personSeeking: "(name of person seeking consent) 1",
-      dated: "(date of potential sexual activity) 1",
+      personGiving: "(name of person giving consent)",
+      personSeeking: "(name of person seeking consent)",
+      dated: "(date of potential sexual activity)",
       agree: false
     }
 

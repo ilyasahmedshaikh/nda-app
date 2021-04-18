@@ -11,7 +11,6 @@ export class DigitalSignatureComponent implements OnInit {
 
   @Output() stepFn = new EventEmitter<any>();
   @Output() getsignature = new EventEmitter<any>();
-  base64Img: string = "";
 
   constructor(
     private whiteboardService: NgWhiteboardService,
