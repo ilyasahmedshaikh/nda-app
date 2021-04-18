@@ -6,7 +6,7 @@
       </div>
     </div>
 
-    <form class="login-inputs">
+    <form class="login-inputs" [formGroup]="programForm">
       <div class="form-group cutom-input">
         <i class="far fa-envelope"></i>
         <input type="email" class="form-control" placeholder="Email or Username" formControlName="email">
@@ -36,7 +36,11 @@
       </div>
 
       <div class="login-btn">
-        <a class="rounded-btn w-50" (click)="login()">Log In</a>
+        <button class="rounded-btn w-50 border-0" (click)="login()"
+          [disabled]="programForm.invalid" 
+          [ngClass]="{'disable-opacity': programForm.invalid}">
+          Log In
+        </button>
       </div>
 
       <div class="account-new pt-3 text-center">
