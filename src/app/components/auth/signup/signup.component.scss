@@ -8,14 +8,15 @@ section {
       img {
         width: 70px;
         height: 70px;
-        // object-fit: cover;
-        // object-position: center;
       }
     }
     form {
       &.signup-inputs {
         .signup-btn {
           margin-top: 13%;
+        }
+        input {
+          height: 50px;
         }
       }
     }

@@ -5,5 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class ConfigService {
 
+  public tables: any = { 
+    nda: 'nda',
+  }
+
   constructor() { }
 }

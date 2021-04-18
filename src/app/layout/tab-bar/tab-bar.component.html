@@ -1,1 +1,15 @@
-<p>tab-bar works!</p>
+<div class="tab-bar" *ngIf="tabBarShow">
+    <div class="tabs">
+        <div class="tab" routerLink="/favorites" (click)="toggleBack(true)">
+            <i class="fas fa-heart"></i>
+            <p>Favorites</p>
+        </div>
+        <div class="tab circular" routerLink="/nda/nda-create" (click)="toggleBack(true)">
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="tab" routerLink="/settings" (click)="toggleBack(true)">
+            <i class="fas fa-cog"></i>
+            <p>Settings</p>
+        </div>
+    </div>
+</div>

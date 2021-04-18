@@ -1,19 +1,24 @@
 <section class="nda-listings-screen">
-  <div class="container">
+  <app-credits-bar [credits]="creditsCount"></app-credits-bar>
+
+  <div class="container py-4">
     <div class="card" *ngFor="let item of List">
       <div class="card-body pb-0">
         <div class="heading d-flex justify-content-between">
-          <h5 class="card-title">{{item.title}}</h5>
-          <a href="#"><i class="far fa-edit"></i></a>
+          <h5 class="card-title">
+            <span class="text-capitalize">{{item.personGiving}} </span>
+            <small class="text-black-50">{{item.dated}}</small>
+          </h5>
+          <a *ngIf="item.signature"><i class="far fa-edit"></i></a>
         </div>
-        <p class="card-text">{{item.content}}</p>
+        <p class="card-text">My name is <a class="text-dark font-weight-bold">{{item.personGiving}}</a>. I am over 18 years of
+          age and of sound mind.</p>
       </div>
       <hr>
       <div class="edit-btn">
-        <a href="#">
-          <i class="fas fa-pencil-alt">
-            <span>Describe</span>
-          </i>
+        <a routerLink="/nda/nda-details" (click)="describe(item)">
+          <i class="fas fa-pencil-alt"></i>
+          <span>Describe</span>
         </a>
       </div>
     </div>
